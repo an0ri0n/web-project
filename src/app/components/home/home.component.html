@@ -1,0 +1,5 @@
+<div class="container p-5">
+  <input type="text" (change)="parentValue = $event.target.value">
+  <button class="m-2" (click)="show =! show ">SHOW</button>
+  <app-child *ngIf="show" [value]="parentValue"></app-child>
+</div>
